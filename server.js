@@ -10,16 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-let noteArray = [
-	{
-		title: '',
-		text: '',
-		id: null
-	}
-];
+let noteArray = [];
 
-//GET
-
+// get api route
 app.get('/api/notes', (req, res) => {
 	//Read db.json
 	fs.readFile('./db/db.json', 'utf8', (err, data) => {
@@ -27,11 +20,13 @@ app.get('/api/notes', (req, res) => {
 
 		res.send(data);
 
-		// parsedData = JSON.parse(data);
-		// console.log(parsedData);
+		dataBase = JSON.parse(data);
+		noteArray = dataBase;
+		console.log(noteArray);
 	});
 });
 
+// post api route
 app.post('/api/notes', (req, res) => {
 	const newNote = req.body;
 	newNote.id = uuid.v4();
@@ -43,6 +38,7 @@ app.post('/api/notes', (req, res) => {
 	res.json();
 });
 
+// html routes
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, './public/index.html'));
 });
