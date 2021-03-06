@@ -44,21 +44,21 @@ app.post('/api/notes', (req, res) => {
 //Bonus
 
 app.delete('/api/notes/:id', (req, res) => {
-	let selectedNoteId = req.param.id;
-	//console log coming up as undefined hence rest of code not working
+	let selectedNoteId = req.params.id;
+	//console log coming up as undefined so delete button is not working
 	console.log(selectedNoteId);
 
-	// function filterById() {
-	// 	for (i = 0; i < noteArray.length; i++) {
-	// 		return noteArray[i].id !== selectedNoteId;
-	// 	}
-	// }
-	// const filteredArray = noteArray.filter(filterById);
+	function filterById() {
+		for (i = 0; i < noteArray.length; i++) {
+			return noteArray[i].id !== selectedNoteId;
+		}
+	}
+	const filteredArray = noteArray.filter(filterById);
 
-	// fs.writeFile('./db/db.json', JSON.stringify(filteredArray), (err) => {
-	// 	if (err) throw err;
-	// });
-	// res.json('./db/db.json');
+	fs.writeFile('./db/db.json', JSON.stringify(filteredArray), (err) => {
+		if (err) throw err;
+	});
+	res.json('./db/db.json');
 });
 
 //Dummy JSON to test delete function
