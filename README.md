@@ -10,7 +10,6 @@ This is an app that allows the user to create and save notes.  The user can writ
 
  * [User-Story](#userstory)
  *[Installation](#installation)
- *[Installation](#installation) 
  *[Usage](#usage)
  *[Contribution](#contribution)
  *[License](#license) 
@@ -29,6 +28,13 @@ This is an app that helps the user keep track of and organize tasks they need to
 
 ## Usage 
 
+![alt text](assets/home.png)
+![alt text](assets/notes-home.png)
+![alt text](assets/create-first-note.png)
+![alt text](assets/first-added.png)
+![alt text](assets/second-added.png)
+![alt text](assets/reopen-shopping.png)
+
 
 
 
@@ -40,6 +46,7 @@ https://drive.google.com/file/d/1yFYZmnRRtr-iysNjJdN_DdfbZtUFimdE/view
  none
 
 ## Tests 
+none
 
 
 ## Questions 
