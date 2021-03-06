@@ -28,6 +28,9 @@ This is an app that helps the user keep track of and organize tasks they need to
 
 ## Usage 
 
+
+link to heroku: https://rocky-plateau-33975.herokuapp.com/
+
 ![alt text](assets/home.png)
 ![alt text](assets/notes-home.png)
 ![alt text](assets/create-first-note.png)
@@ -38,8 +41,6 @@ This is an app that helps the user keep track of and organize tasks they need to
 
 
 
-Click on link for a video demonstration:
-https://drive.google.com/file/d/1yFYZmnRRtr-iysNjJdN_DdfbZtUFimdE/view
 
 ## Contribution 
 
