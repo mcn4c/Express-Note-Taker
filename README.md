@@ -28,8 +28,10 @@ This is an app that helps the user keep track of and organize tasks they need to
 
 ## Usage 
 
+[Link to Healthcare-Scheduler](https://rocky-plateau-33975.herokuapp.com/)
 
-link to heroku: https://rocky-plateau-33975.herokuapp.com/
+
+
 
 ![alt text](assets/home.png)
 ![alt text](assets/notes-home.png)
